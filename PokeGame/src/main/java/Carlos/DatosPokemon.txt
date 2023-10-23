@@ -1,0 +1,31 @@
+687 Malamar Dark    Psychic 482 86  92  88  68  75  73  6   False
+609 Chandelure  Ghost   Fire    520 60  55  90  145 90  80  5   False
+379 Registeel   Steel       580 80  75  150 75  150 50  3   True
+203 Girafarig   Normal  Psychic 455 70  80  65  90  65  85  2   False
+459 Snover  Grass   Ice 334 60  62  50  62  60  40  4   False
+600 Klang   Steel       440 60  80  95  70  85  50  5   False
+12  Butterfree  Bug Flying  395 60  45  50  90  80  70  1   False
+179 Mareep  Electric        280 55  40  40  65  45  35  2   False
+553 Krookodile  Ground  Dark    519 95  117 80  65  70  92  5   False
+249 Lugia   Psychic Flying  680 106 90  130 90  154 110 2   True
+45  Vileplume   Grass   Poison  490 75  80  85  110 90  50  1   False
+621 Druddigon   Dragon      485 77  120 90  60  90  48  5   False
+516 Simipour    Water       498 75  98  63  98  63  101 5   False
+202 Wobbuffet   Psychic     405 190 33  58  33  58  33  2   False
+497 Serperior   Grass       528 75  75  95  75  95  113 5   False
+94  Gengar  Ghost   Poison  500 60  65  60  130 75  110 1   False
+34  Nidoking    Poison  Ground  505 81  102 77  85  75  85  1   False
+354 Banette Ghost       455 64  115 65  83  63  65  3   False
+690 Skrelp  Poison  Water   320 50  60  60  60  60  30  6   False
+702 Dedenne Electric    Fairy   431 67  58  57  81  67  101 6   False
+389 Torterra    Grass   Ground  525 95  109 105 75  85  56  4   False
+277 Swellow Normal  Flying  430 60  85  60  50  50  125 3   False
+398 Staraptor   Normal  Flying  485 85  120 70  50  60  100 4   False
+527 Woobat  Psychic Flying  313 55  45  43  55  43  72  5   False
+660 Diggersby   Normal  Ground  423 85  56  77  50  77  78  6   False
+6   Charizard   Fire    Flying  534 78  84  78  109 85  100 1   False
+117 Seadra  Water       440 55  65  95  95  45  85  1   False
+250 Ho-oh   Fire    Flying  680 106 130 90  110 154 90  2   True
+282 Gardevoir   Psychic Fairy   518 68  65  65  125 115 80  3   False
+150 Mewtwo  Psychic     680 106 110 90  154 90  130 1   True
+491 Darkrai Dark        600 70  90  90  135 90  125 4   True
