@@ -10,18 +10,18 @@ public class MyObjectOutputStream extends ObjectOutputStream
     // Para saber si el archivo existe o no.
     private static boolean isExist;
 
-    public MyObjectOutputStream(String path,boolean append) throws IOException
+    public MyObjectOutputStream(String path) throws IOException
     {
         /* Invocamos al constructor de la clase ObjectOutputStream */
-        super(createFile(path,append));
+        super(createFile(path));
     }
 
-    private static FileOutputStream createFile(String path,boolean append) throws IOException
+    private static FileOutputStream createFile(String path) throws IOException
     {
         /* Si el archivo existe.. */
         if(new File(path).exists())
             isExist = true;
-        return new FileOutputStream(path, append);
+        return new FileOutputStream(path, true);
     }
 
     @Override

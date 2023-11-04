@@ -10,7 +10,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,11 +23,12 @@ public class DateControler
 
 	public void parsePokemonsToFileLikeObjecs(String ruta, Pokemon pokemon) throws UnidadUnoExcepcion
 	{
+		
 		ObjectOutputStream objectOutputStream = null;
 
 		try
 		{			
-			objectOutputStream = new MyObjectOutputStream(ruta,false);
+			objectOutputStream = new MyObjectOutputStream(ruta);
 
 			objectOutputStream.writeObject(pokemon);
 			objectOutputStream.flush();
@@ -55,15 +58,16 @@ public class DateControler
 
 			}
 		}
-
 	}
 
-	public List<Pokemon> getPokemonsFromFileAndCreateList(String ruta) throws UnidadUnoExcepcion
+	
+
+	public Map<Integer,Pokemon> getPokemonsFromFileAndCreateList(String ruta) throws UnidadUnoExcepcion
 	{
 		File file = new File(ruta);
 		FileInputStream fileInputStream = null;
 		ObjectInputStream objectInputStream = null;
-		List<Pokemon> pokemons = new ArrayList<Pokemon>();
+		Map<Integer,Pokemon> pokemons = new TreeMap<Integer,Pokemon>();
 
 		try
 		{
@@ -74,7 +78,8 @@ public class DateControler
 			{
 				while (true)
 				{
-					pokemons.add((Pokemon) objectInputStream.readObject());
+					Pokemon pokemon = ((Pokemon) objectInputStream.readObject());
+					pokemons.put(pokemon.getNumero_pokemon(), pokemon);
 				}
 			} catch (EOFException exception)
 			{
