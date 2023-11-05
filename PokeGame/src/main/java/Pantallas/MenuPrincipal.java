@@ -51,6 +51,7 @@ public class MenuPrincipal extends JFrame
 	 */
 	public MenuPrincipal(List<Pokemon> player1, List<Pokemon> player2)
 	{
+		
 		JFrame mainMenuFrame = new JFrame("Menú Principal");
         mainMenuFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainMenuFrame.setSize(500, 300);
