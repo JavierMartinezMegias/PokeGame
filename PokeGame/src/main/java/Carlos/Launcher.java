@@ -9,6 +9,8 @@ import java.util.TreeMap;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import Pantallas.MenuPrincipal;
+
 public class Launcher
 {
 	private static final Logger log = LogManager.getLogger();
@@ -18,6 +20,7 @@ public class Launcher
 		Map<Integer,Pokemon> pokemons = new TreeMap<Integer,Pokemon>();
 		List<Pokemon> player1 = new ArrayList<Pokemon>();
 		List<Pokemon> player2 = new ArrayList<Pokemon>();
+		
 		
 		PlayersActions playersActions = new PlayersActions();
 
@@ -41,6 +44,8 @@ public class Launcher
 		
 		player1 = playersActions.chooseRandonList(pokemons);
 		player2 = playersActions.chooseRandonList(pokemons);
+		
+		MenuPrincipal pantalla = new MenuPrincipal(player1, player2);
 		
 		System.out.println(player1.toString());
 		System.out.println(player2.toString());

@@ -21,17 +21,19 @@ public class Pokemon implements Serializable
 	private int speed;
 	private int generation;
 	private boolean legendary;
+	private String urlImagen;
 
-	public Pokemon(int numero_pokemon, String nombre_pokemon, String tipo, String tipo2, int total, int HP, int attack,
-			int defense, int sp_atk, int sp_def, int speed, int generation, boolean legendary)
-	{
+	
 
+	public Pokemon(int numero_pokemon, String nombre_pokemon, String tipo, String tipo2, int total, int hP, int attack,
+			int defense, int sp_atk, int sp_def, int speed, int generation, boolean legendary, String urlImagen) {
+		super();
 		this.numero_pokemon = numero_pokemon;
 		this.nombre_pokemon = nombre_pokemon;
 		this.tipo = tipo;
 		this.tipo2 = tipo2;
 		this.total = total;
-		this.HP = HP;
+		this.HP = hP;
 		this.attack = attack;
 		this.defense = defense;
 		this.sp_atk = sp_atk;
@@ -39,6 +41,7 @@ public class Pokemon implements Serializable
 		this.speed = speed;
 		this.generation = generation;
 		this.legendary = legendary;
+		this.urlImagen = urlImagen;
 	}
 
 	public int getNumero_pokemon()
@@ -203,6 +206,14 @@ public class Pokemon implements Serializable
 		builder.append(legendary);
 		builder.append("]");
 		return builder.toString();
+	}
+
+	public String getUrlImagen() {
+		return urlImagen;
+	}
+
+	public void setUrlImagen(String urlImagen) {
+		this.urlImagen = urlImagen;
 	}
 	
 	

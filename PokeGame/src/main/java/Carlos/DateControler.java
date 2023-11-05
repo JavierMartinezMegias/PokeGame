@@ -152,6 +152,7 @@ public class DateControler
 		int speed;
 		int generation;
 		boolean legendary;
+		String url;
 
 		try
 		{
@@ -179,8 +180,9 @@ public class DateControler
 				speed = scanner.nextInt();
 				generation = scanner.nextInt();
 				legendary = scanner.nextBoolean();
+				url = scanner.next();
 				Pokemon pokemon = new Pokemon(numero_pokemon, nombre_pokemon, tipo, tipo2, total, HP, attack, defense,
-						sp_atk, sp_def, speed, generation, legendary);
+						sp_atk, sp_def, speed, generation, legendary, url);
 
 				infoControl = new DateControler();
 				try
